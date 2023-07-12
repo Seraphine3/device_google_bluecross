@@ -6,7 +6,7 @@
 
 # Inherit some common CherishOS stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # CherishOS Stuff with GApps
 TARGET_SUPPORTS_GOOGLE_RECORDER := true

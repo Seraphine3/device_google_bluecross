@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Evolution X stuff.
+# Inherit some common Rising Tech stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_IS_PIXEL := true
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -20,7 +20,18 @@ include device/google/crosshatch/blueline/device-evolution.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3
-PRODUCT_NAME := evolution_blueline
+PRODUCT_NAME := lineage_blueline
+
+# Google Services Package 
+WITH_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Rising
+RISING_MAINTAINER := lunaire
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USE_PIXEL_FINGERPRINT := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=blueline \

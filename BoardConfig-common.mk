@@ -291,6 +291,9 @@ ODM_MANIFEST_G013B_FILES := device/google/crosshatch/nfc/manifest_se_eSE1.xml
 ODM_MANIFEST_G013C_FILES := device/google/crosshatch/nfc/manifest_se_SIM1.xml
 ODM_MANIFEST_G013D_FILES := device/google/crosshatch/nfc/manifest_se_eSE1.xml
 
+# Initiating Rising Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_crosshatch
+
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 

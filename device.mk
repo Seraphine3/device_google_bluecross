@@ -19,6 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/av \
     hardware/google/camera \
     hardware/google/interfaces \
+    hardware/qcom/sdm845/display \
     hardware/google/pixel \
     hardware/qcom/sdm845 \
     vendor/google/camera \
